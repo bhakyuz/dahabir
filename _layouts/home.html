@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="intro-text">
+  <h1>
+    {% for text in site.intro %}
+    <span class="outer">
+      <span class="inner">{{ text }}</span>
+    </span>
+    {% endfor %}
+  </h1>
+
+  {% for detail in site.intro-detail %}
+  <!-- <p> -->
+    <span> {{ detail }} </span>
+  <!-- </p> -->
+  <br>
+  {% endfor %}
+</div>

@@ -1,0 +1,80 @@
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: translate(0, 100px) skew(0deg, 7deg);
+    transform: translate(0, 100px) skew(0deg, 7deg);
+  }
+
+  to {
+    -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: translate(0, 100px) skew(0deg, 7deg);
+    transform: translate(0, 100px) skew(0deg, 7deg);
+  }
+
+  to {
+    -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
+  }
+}
+
+.intro-text {
+  margin: 160px 0;
+  max-width: 800px;
+}
+
+.intro-text h1 {
+  font-family: "PT Serif", serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.intro-text h1 .outer {
+  display: block;
+  height: 59px;
+  overflow: hidden;
+}
+
+.intro-text h1 .outer:nth-child(1) .inner {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.intro-text h1 .outer:nth-child(2) .inner {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.intro-text h1 .outer:nth-child(3) .inner {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3;
+}
+
+.intro-text h1 .outer:nth-child(4) .inner {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.intro-text h1 .outer:nth-child(5) .inner {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.intro-text h1 .outer:nth-child(6) .inner {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.intro-text h1 .inner {
+  display: block;
+  -webkit-transform: translate(0, 100px) skew(0deg, 7deg);
+  -ms-transform: translate(0, 100px) skew(0deg, 7deg);
+  transform: translate(0, 100px) skew(0deg, 7deg);
+  -webkit-animation: anim 1.5s ease forwards;
+  animation: anim 1.5s ease forwards;
+}

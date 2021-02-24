@@ -1,0 +1,46 @@
+# Site settings
+title: dahabir
+description: "dahabir, dahabir, birdaha, bahadir"
+url: "https://dahabir.com/"
+
+# Author
+author:
+  name: bhakyuz
+  url: https://dataisamess.com/
+  email: none@fornow.com
+
+intro:
+  - dahabir
+  - bir daha, daha bir
+  - bir bahadir
+
+intro-detail:
+  - Hoping to become a wordsmith one day..
+  - 'Get updates on my data blog: <a href="https://dataisamess.com/"><b> dataisamess </b></a'
+
+# Build settings
+markdown: kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+  - jekyll-sitemap
+
+  # Permalinks
+permalink: /:year-:month-:day/:title
+paginate: 5
+
+# Excludes
+exclude: [Gemfile, Gemfile.lock, tale.gemspec, py]
+# Disqus (Set to your disqus id)
+# disqus: jekyll-tale
